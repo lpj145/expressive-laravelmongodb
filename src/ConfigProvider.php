@@ -10,11 +10,13 @@ class ConfigProvider
     public function __invoke()
     {
         return [
-            'factories' => [
-                Capsule::class => CapsuleFactory::class
-            ],
-            'alias' => [
-                'database' => Capsule::class
+            'dependencies' => [
+                'factories' => [
+                    Capsule::class => CapsuleFactory::class
+                ],
+                'alias' => [
+                    'database' => Capsule::class
+                ]
             ]
         ];
     }
