@@ -12,6 +12,9 @@ class ConfigProvider
         return [
             'factories' => [
                 Capsule::class => CapsuleFactory::class
+            ],
+            'alias' => [
+                'database' => Capsule::class
             ]
         ];
     }
