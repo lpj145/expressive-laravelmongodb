@@ -14,7 +14,7 @@ class ConfigProvider
                 'factories' => [
                     Capsule::class => CapsuleFactory::class
                 ],
-                'alias' => [
+                'aliases' => [
                     'database' => Capsule::class
                 ]
             ]
